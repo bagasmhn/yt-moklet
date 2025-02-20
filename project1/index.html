@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube | Moklet</title>
+    <style>
+        @font-face {
+            font-family: 'SF Pro';
+            src: url('https://developer.apple.com/fonts/SF-Pro.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .video-container {
+            flex: 2;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        iframe {
+            width: 90%;
+            height: 315px;
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .prestasi {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .running-text {
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Moklet Youtube</div>
+    
+    <div class="container">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/EdrU_4K9e6M?si=ROysY8M5jzD5iQXI" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="sidebar">
+            <div class="prestasi">Prestasi 1</div>
+            <div class="prestasi">Prestasi 2</div>
+            <div class="prestasi">Prestasi 3</div>
+            <div class="prestasi">Prestasi 4</div>
+            <div class="prestasi">Prestasi 5</div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="running-text">🚀 "Masa depan adalah milik mereka yang percaya pada keindahan impian mereka!"</div>
+    </div>
+</body>
+</html>
